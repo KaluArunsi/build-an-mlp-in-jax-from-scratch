@@ -1,6 +1,6 @@
 # Build an MLP in JAX from Scratch
 
-Implement a multi-layer perceptron end-to-end in JAX, from PRNG key handling and parameter initialization to forward passes, loss, autodiff, and SGD training. By the end you'll have a fully working classifier trained with jax.grad and pure functional updates.
+Implemented a multi-layer perceptron end-to-end in JAX, from PRNG key handling and parameter initialization to forward passes, loss, autodiff, and SGD training. Producing a fully working classifier trained with jax.grad and pure functional updates.
 
 ## How to run
 
