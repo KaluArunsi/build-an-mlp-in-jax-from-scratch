@@ -32,8 +32,16 @@ def sample_normal_matrix(key, shape):
     normal_sample = jax.random.normal(key, shape=shape)
     return normal_sample
 
-# Step 4 - sample_input_features (not yet solved)
-# TODO: implement
+# Step 4 - sample_input_features
+import jax
+import jax.numpy as jnp
+
+def sample_input_features(key, batch_size, num_features):
+    """Sample a (batch_size, num_features) standard-normal feature batch."""
+    # TODO: draw a batch of random input feature vectors from the PRNG key
+    shape = (batch_size, num_features)
+    sample_matrix = jax.random.normal(key, shape)
+    return sample_matrix
 
 # Step 5 - assign_class_labels (not yet solved)
 # TODO: implement
