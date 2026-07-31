@@ -1,6 +1,6 @@
 # Build an MLP in JAX from Scratch
 
-Implemented a multi-layer perceptron end-to-end in JAX, from PRNG key handling and parameter initialization to forward passes, loss, autodiff, and SGD training. Producing a fully working classifier trained with jax.grad and pure functional updates.
+Implement a multi-layer perceptron end-to-end in JAX, from PRNG key handling and parameter initialization to forward passes, loss, autodiff, and SGD training. By the end you'll have a fully working classifier trained with jax.grad and pure functional updates.
 
 ## How to run
 
@@ -15,7 +15,7 @@ python scaffold.py
 - [x] **3.** sample_normal_matrix
 - [x] **4.** sample_input_features
 - [x] **5.** assign_class_labels
-- [ ] **6.** one_hot_encode_labels
+- [x] **6.** one_hot_encode_labels
 - [ ] **7.** init_linear_layer
 - [ ] **8.** init_mlp_params
 - [ ] **9.** linear_forward
