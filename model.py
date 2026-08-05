@@ -122,8 +122,18 @@ def softmax_probabilities(logits):
 
     return probabilities
 
-# Step 12 - mlp_forward (not yet solved)
-# TODO: implement
+# Step 12 - mlp_forward
+import jax
+import jax.numpy as jnp
+
+def mlp_forward(params, x):
+    # TODO: run x through all hidden layers with ReLU, then a final linear layer, returning logits.
+    for i in params[:-1]:
+        x = relu_activation(x @ i['W'] + i['b'])
+    
+    logits = linear_forward(x, params[-1])
+
+    return logits
 
 # Step 13 - log_softmax_logits (not yet solved)
 # TODO: implement
